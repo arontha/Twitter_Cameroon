@@ -47,3 +47,8 @@ Requires your own APIKeys.py in the API folder. Generate these from the Twitter 
 
 ### AWS
 Everything in this code runs using the free tiers of AWS. You'll need to create your own account which requires attaching a valid credit card. You'll need to create the lambda function, upload the code as a zip, attach the trigger (Cloudwatch Event), and change the runtime to allow for ~30 seconds or less. 
+
+### Cost
+Twitter's API has a limit of number of tweets per month (using the free version). At the time of this writing, that limit is >150x the Tweepy API call limit.  
+
+AWS Lambda has a monthly compute free tier. Each run of a bot is <.1% of that limit at the time of this writing. 
