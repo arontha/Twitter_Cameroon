@@ -19,7 +19,7 @@ This bot will pull a large sample of tweets with the word Cameroun (French spell
 Lambda functions have many uses. In this case, we will use it for ultra cheap (free) hosting/computing. All work necessary in AWS to run this bot is done by navigating to Lambda in the AWS UI and creating a new function. The equivalent of main.py for a lambda function is lambda_function.py. To observe the code, start with lambda_function.py and trace its references.
 
 ### Non-native Python Packages w/ Lambda
-The bot relies on a non-native package (in this case Tweepy). Uploading the code requires also uploading the package. This can be done in several ways, as outlined here: https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
+The bot relies on a non-native package (in this case Tweepy). Running the code on Lambda requires also uploading the package. This can be done in several ways, as outlined here: https://docs.aws.amazon.com/lambda/latest/dg/python-package.html
 
 ### Cloudwatch Events
 These are the triggers that will determine when to run your lambda function. Using cron expressions, you can set this on a schedule to run at a certain time per day, day per week/month. 
@@ -46,7 +46,7 @@ Requires your own APIKeys.py in the API folder. Generate these from the Twitter 
 - Access_Secret = '222'
 
 ### AWS
-Everything in this code runs using the free tiers of AWS. You'll need to create your own account which requires attaching a valid credit card. You'll need to create the lambda function, upload the code as a zip, attach the trigger (Cloudwatch Event), and change the runtime to allow for ~30 seconds or less. 
+Everything in this code runs using the free tiers of AWS. You'll need to create your own account which requires attaching a valid credit card. You'll need to create the lambda function, upload the code as a zip, attach the trigger (Cloudwatch Event), and change the runtime to allow for ~30 seconds or less. You'll need to follow the instructions under the AWS Hosting section of this readme to upload the script with the necessary package, otherwise you'll receive an error stating Tweepy: no such module. 
 
 ### Cost
 Twitter's API has a limit of number of tweets per month (using the free version). At the time of this writing, that limit is >150x the Tweepy API call limit.  
