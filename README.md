@@ -29,7 +29,7 @@ These are the triggers that will determine when to run your lambda function. Usi
 ### Developer API
 https://developer.twitter.com/en/docs/twitter-api
 ### Tweepy
-https://www.tweepy.org/ \n
+https://www.tweepy.org/      
 A few highlights
 - Max # of tweets pulled at once is 3200
 - Can both download tweets and create tweets
