@@ -4,7 +4,7 @@ https://twitter.com/atangana_aron
 
 Cost = Free! 
 
-# The Bot
+## The Bot
 ### Yaounde (Image)
 This bot will get a large sample of tweets with the word Yaoundé and then retweet the most liked tweet from the sample with an attached photo. (At present this runs only on Sundays)
 
@@ -14,7 +14,7 @@ This bot will run daily and check to see if there is an abnormally large number 
 ### Top 10 Words
 This bot will pull a large sample of tweets with the word Cameroun (French spelling of Cameroon). For each Tweet, it removes stopwords and duplicates, then creates a bag of words counting occurrence of each word. The top 10 words are then tweeted. (At present, this runs every day except Sunday)
 
-# AWS Hosting
+## AWS Hosting
 ### AWS Lambda
 Lambda functions have many uses. In this case, we will use it for ultra cheap (free) hosting/computing. All work necessary in AWS to run this bot is done by navigating to Lambda in the AWS UI and creating a new function. The equivalent of main.py for a lambda function is lambda_function.py. To observe the code, start with lambda_function.py and trace its references.
 
@@ -25,7 +25,7 @@ The bot relies on a non-native package (in this case Tweepy). Uploading the code
 These are the triggers that will determine when to run your lambda function. Using cron expressions, you can set this on a schedule to run at a certain time per day, day per week/month. 
 
 
-# Twitter API
+## Twitter API
 ### Developer API
 https://developer.twitter.com/en/docs/twitter-api
 ### Tweepy
@@ -35,7 +35,7 @@ A few highlights:
 - Max # of tweets pulled at once is 3200
 - Can both download tweets and create tweets
 
-# Running this code 
+## Running this code 
 ### API Keys
 Requires your own APIKeys.py in the API folder. Generate these from the Twitter Developer API. After signing up for a developer account, create a new project and generate read/write keys. Format of APIKeys.py should be as follows:
 
