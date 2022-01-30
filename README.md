@@ -1,5 +1,4 @@
-# Twitter_Cameroon
-@atangana_aron Twitter bot 
+# Twitter Cameroon: @atangana_aron
 A Twitter bot developed in Python using the Tweepy library and hosted in AWS. 
 https://twitter.com/atangana_aron
 
