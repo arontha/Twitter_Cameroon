@@ -7,13 +7,13 @@ Cost = Free!
 
 # The Bot
 ### Yaounde (Image)
-This bot will get a large sample of tweets with the word Yaoundé and then retweet the most liked tweet from the sample with an attached photo.
+This bot will get a large sample of tweets with the word Yaoundé and then retweet the most liked tweet from the sample with an attached photo. (At present this runs only on Sundays)
 
 ### Paul Biya Alert
 This bot will run daily and check to see if there is an abnormally large number of relevant Tweets and then retweet the most liked tweet (if there are a lot of Tweets that day). The bot will specifically pull tweets with the word Biya and see how many of them also contain Paul. 
 
 ### Top 10 Words
-This bot will pull a large sample of tweets with the word Cameroun (French spelling of Cameroon). For each Tweet, it removes stopwords and duplicates, then creates a bag of words counting occurrence of each word. The top 10 words are then tweeted.  
+This bot will pull a large sample of tweets with the word Cameroun (French spelling of Cameroon). For each Tweet, it removes stopwords and duplicates, then creates a bag of words counting occurrence of each word. The top 10 words are then tweeted. (At present, this runs every day except Sunday)
 
 # AWS Hosting
 ### AWS Lambda
